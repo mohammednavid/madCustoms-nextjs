@@ -1,7 +1,7 @@
 // fake data
 import products from '../../utils/data/products';
 
-export default Products= (req, res) => {
+export default function Products (req, res) {
 
   // fake loading time
   setTimeout(() => {
