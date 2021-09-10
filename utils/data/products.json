@@ -1,0 +1,101 @@
+[
+  {
+    "id": "p1",
+    "name": "Nike air force 1 low custom pastel line",
+    "price": "119.99",
+    "by": "ALLSNKRSHOP",
+    "ratings": "4.7",
+    "quantityAvailable": "2",
+    "category": "sneakers",
+    "currentPrice": "89.99",
+    "images": "/products/product-1.webp"
+  },
+  {
+    "id": "p2",
+    "name": "Nike Air Force 1︱Cherries 🍒",
+    "price": "119.99",
+    "by": "TONY",
+    "ratings": "4.4",
+    "quantityAvailable": 2,
+    "category": "sneakers",
+    "currentPrice": "89.99",
+    "images": "/products/product-2.webp"
+  },
+  {
+    "id": "p3",
+    "name": "Nike Air Force 1 Dual - Lilac",
+    "price": "119.99",
+    "by": "SNEAKEAZE",
+    "ratings": "4.8",
+    "quantityAvailable": "3",
+    "category": "sneakers",
+    "currentPrice": "89.99",
+    "images": "/products/product-3.webp"
+  },
+  {
+    "id": "p4",
+    "name": "Custom Air Force 1 'Pink/Red Colors'",
+    "price": "119.99",
+    "by": "CUSTOMIZZATO",
+    "ratings": "4.9",
+    "quantityAvailable": "4",
+    "category": "sneakers",
+    "currentPrice": "89.99",
+    "images": "/products/product-4.webp"
+  },
+  {
+    "id": "p5",
+    "name": "Red Rose Black Air Force 1",
+    "price": "119.99",
+    "by": "CLOUTCVLTURE",
+    "ratings": "4.3",
+    "quantityAvailable": "5",
+    "category": "sneakers",
+    "currentPrice": "89.99",
+    "images": "/products/product-5.webp"
+  },
+  {
+    "id": "p6",
+    "name": "Pixels",
+    "price": "119.99",
+    "by": "KUSTOMB",
+    "ratings": "5.0",
+    "quantityAvailable": "6",
+    "category": "sneakers",
+    "currentPrice": "89.99",
+    "images": "/products/product-6.webp"
+  },
+  {
+    "id": "p7",
+    "name": "“Double Dipped” Air Force 1’s",
+    "price": "119.99",
+    "by": "WUUSKI",
+    "ratings": "4.4",
+    "quantityAvailable": "7",
+    "category": "sneakers",
+    "currentPrice": "89.99",
+    "images": "/products/product-7.webp"
+  },
+  {
+    "id": "p8",
+    "name": "Grey dragon and bandana crips pattern🖤🐉",
+    "price": "119.99",
+    "by": "BLUZ_ART",
+    "ratings": "4.4",
+    "quantityAvailable": "8",
+    "category": "sneakers",
+    "currentPrice": "89.99",
+    "images": "/products/product-8.webp"
+  },
+  {
+    "id": "p9",
+    "name": "Grey dragon and bandana crips pattern🖤🐉",
+    "price": "119.99",
+    "by": "BLUZ_ART",
+    "ratings": "4.4",
+    "quantityAvailable": "8",
+    "category": "sneakers",
+    "currentPrice": "89.99",
+    "images": "/products/product-3.webp"
+  }
+]

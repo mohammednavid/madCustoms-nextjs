@@ -1,0 +1,35 @@
+.card {
+  max-width: 270px;
+  text-align: center;
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    .name {
+      font-size: 16px;
+      letter-spacing: 0.1px;
+      line-height: 125%;
+      cursor: pointer;
+      transition: all 0.3s linear;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+      p {
+        color: #000;
+        padding-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

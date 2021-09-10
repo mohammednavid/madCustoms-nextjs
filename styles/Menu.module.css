@@ -1,0 +1,114 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  min-width: 280px;
+  background: transparent;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+}
+
+.menu .menu__close {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  padding: 15px;
+  opacity: 1;
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .menu__close li {
+  list-style: none;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1.7px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.menu .menu__close li:nth-child(1):hover, .menu .menu__close li:nth-child(2):hover, .menu .menu__close li:nth-child(3):hover, .menu .menu__close li:nth-child(4):hover {
+  text-decoration: underline;
+}
+
+.menu .menu__close li:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .menu__close li:nth-child(2) {
+  padding-bottom: 15vh;
+}
+
+.menu .menu__close li:nth-child(5) {
+  padding-top: 15vh;
+}
+
+.menu .menu__close li:nth-child(6) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .menu__close li:nth-child(6) input {
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+  font-size: 18px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.menu__open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.search__ul {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 30px 15px;
+  background: #fff;
+}
+
+.search__ul .search__li {
+  list-style: none;
+}
+/*# sourceMappingURL=Menu.module.css.map */

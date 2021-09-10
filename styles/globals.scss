@@ -1,0 +1,65 @@
+/* @font-face {
+  font-family: Helvetica;
+  src: url("/public/assets/fonts/Helvetica/helvetica.ttf");
+} */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font-family: Helvetica, sans-serif, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  font-size: 36px;
+  line-height: 110%;
+  font-weight: 300;
+  padding-bottom: 20px;
+  @media screen and (max-width: 600px) {
+    font-size: 26px;
+  }
+}
+.btn {
+  width: max-content;
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 10px;
+  letter-spacing: 1.7px;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 10px;
+}
+.descp {
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.7px;
+  color: #777777;
+}
+.products {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  @media screen and (min-width: 621px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (min-width: 1201px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

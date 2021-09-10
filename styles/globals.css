@@ -1,9 +1,14 @@
+/* @font-face {
+  font-family: Helvetica;
+  src: url("/public/assets/fonts/Helvetica/helvetica.ttf");
+} */
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #fff;
+  color: #000;
+  font-family: Helvetica, sans-serif, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
 }
 
 a {
@@ -12,5 +17,73 @@ a {
 }
 
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
+.title {
+  font-size: 36px;
+  line-height: 110%;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
+.btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 10px;
+  letter-spacing: 1.7px;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 10px;
+}
+
+.descp {
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.7px;
+  color: #777777;
+}
+
+.products {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 621px) {
+  .products {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .products {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=globals.css.map */

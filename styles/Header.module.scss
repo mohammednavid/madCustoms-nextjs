@@ -1,0 +1,123 @@
+.site_header {
+  width: 100%;
+  transition: all 0.3s linear;
+  position: fixed;
+  border-bottom: 1px solid transparent;
+  background: #fff;
+  z-index: 100;
+  .container {
+    min-height: 55px;
+    max-height: 55px;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    @media screen and (max-width: 900px) {
+      padding: 0 5%;
+    }
+    .site_logo {
+      font-size: 15px;
+      letter-spacing: 1.7px;
+      line-height: 20px;
+      font-weight: 300;
+      font-family: sans-serif;
+      text-decoration: none;
+      width: 100%;
+      white-space: nowrap;
+    }
+    .site_nav {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      @media screen and (max-width: 1200px) {
+       width: 120%;
+      }
+      @media screen and (max-width: 900px) {
+        justify-content: right;
+        width: auto;
+      }
+      a,
+      .site_nav__shop {
+        cursor: pointer;
+        text-decoration: none;
+        font-family: Helvetica;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 1.7px;
+        color: #777777;
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+      .site_nav__shop {
+        cursor: pointer;
+        padding: 25px 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width:900px) {
+          display: none;
+        }
+        div {
+            width: 150px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-top: 63px;
+            padding: 5px 20px;
+            background: #fff;
+            z-index: 1000;
+            box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.3);
+            // display: none;
+            a {
+            font-family: Helvetica;
+            text-transform: uppercase;
+            padding: 5px 0;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1.7px;
+            color: #777777;
+          }
+        }
+      }
+      .site_nav__shopOpen{
+        background: rgba(0, 0, 0, 0.3);
+        color: #000;
+      }
+      .search_form_wrapper {
+        color: #777777;
+        @media screen and (max-width: 900px) {
+          display: block;
+          margin: 0 15px;
+        }
+      }
+      .site_header__btn_menu {
+        opacity: 0.5;
+        @media screen and (max-width: 900px) {
+          display: block;
+          margin: 0;
+        }
+      }
+      .menu__overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+.site_header__fixed {
+  border-bottom: 1px solid #000;
+}

@@ -1,0 +1,172 @@
+.footer {
+  width: 100%;
+  background: #000;
+  padding: 50px 5%;
+}
+
+.footer .footer__container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.footer .footer__container .footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__container .footer__top .footer__left {
+  color: #818181;
+}
+
+.footer .footer__container .footer__top .footer__left .instagram {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 7px;
+  border: 1px solid #818181;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.footer .footer__container .footer__top .footer__left .apple {
+  cursor: pointer;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  border: 1px solid #818181;
+  font-size: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.footer .footer__container .footer__top .footer__left .apple div {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footer__container .footer__top .footer__left .apple div span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer .footer__container .footer__top .footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footer__container .footer__top .footer__right .footer_link {
+  color: #818181;
+  padding-bottom: 15px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.footer .footer__container .footer__top .footer__right .footer_link:hover {
+  text-decoration: underline;
+}
+
+.footer .footer__container .footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+
+.footer .footer__container .footer__bottom p {
+  font-size: 16px;
+  font-family: serif;
+  line-height: 20px;
+  padding: 30px 0 10px 0;
+}
+
+.footer .footer__container .footer__bottom div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer__container .footer__bottom div input {
+  font-size: 14px;
+  line-height: 240%;
+  margin-right: 5px;
+  width: 300px;
+  max-width: 100%;
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer .footer__container .footer__bottom div input {
+    width: auto;
+  }
+}
+
+.footer .footer__container .footer__bottom div .footer__btn {
+  background: #fff;
+  color: #000;
+}
+/*# sourceMappingURL=Footer.module.css.map */

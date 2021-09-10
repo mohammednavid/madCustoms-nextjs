@@ -1,0 +1,94 @@
+.footer {
+  width: 100%;
+  background: #000;
+  padding: 50px 5%;
+  .footer__container{
+    max-width: 1920px;
+    margin: 0 auto;
+  .footer__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .footer__left {
+      color: #818181;
+      .instagram {
+        width: min-content;
+        padding: 7px;
+        border: 1px solid #818181;
+        display: flex;justify-content: center;align-items: center;
+        cursor: pointer;
+      }
+      .apple {
+        cursor: pointer;
+        width: min-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border: 1px solid #818181;
+        font-size: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+        div {
+          white-space: nowrap;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          span{
+              font-size: 16px;
+              font-weight: 400;
+          }
+        }
+      }
+    }
+    .footer__right {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      flex-direction: column;
+      .footer_link {
+        color: #818181;
+        padding-bottom: 15px;
+        transition: all 0.3s linear;
+        &:hover{
+            text-decoration: underline;
+        }
+      }
+    }
+  }
+  .footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    p{
+        font-size: 16px;
+        font-family: serif;
+        line-height: 20px;
+        padding: 30px 0 10px 0;
+    }
+    div{
+        display: flex;
+        align-items: center;justify-content: center;
+        input{
+            font-size: 14px;
+            line-height: 240%;
+            margin-right: 5px;
+            width: 300px;
+            max-width: 100%;
+            padding-left: 5px;
+            @media screen and (max-width:600px) {
+              width: auto;
+            }
+        }
+        .footer__btn{
+            background: #fff;
+            color: #000;
+        }
+    }
+  }
+}
+}
