@@ -23,6 +23,7 @@ const HomePage = () => {
             <HomeProducts/>
           </div>
         </div>
+        <div className={styles.home__heroBorder}></div>
         <div
           className={styles.home__products}
           style={{ paddingBottom: "30px" }}
