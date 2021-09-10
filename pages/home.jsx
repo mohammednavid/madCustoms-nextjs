@@ -29,7 +29,7 @@ const HomePage = () => {
           style={{ paddingBottom: "30px" }}
         >
           <h2 className={`title ${styles.secTitle}`}>Popular Artists</h2>
-          <div className={styles.home__productsContainer}>
+          <div className="products">
             {artists.slice(0,4).map((artist) => {
               return (
                 <Card
