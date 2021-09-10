@@ -5,11 +5,6 @@ import Card from "../components/Card";
 import {artists} from "../utils/data/artists";
 import HomeProducts from "../containers/HomeProducts";
 const HomePage = () => {
-  // useEffect(() => {
-  //   fetch("https://fakestoreapi.com/products")
-  //     .then((res) => res.json())
-  //     .then((json) => console.log(json));
-  // }, []);
   return (
     <>
       <Header />
