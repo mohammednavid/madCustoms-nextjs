@@ -68,7 +68,7 @@ export default function Product({ product }) {
               <p className={`descp ${styles.product__descp}`}>
                 Every transaction made through a PayPal account is covered by
                 <span> PayPal Purchase Protection</span>. Transactions made
-                through your credit or debit card are covered by your card's
+                through your credit or debit card are covered by your cards
                 purchase protection. If you have any questions or need
                 assistance, our support team is here to help.
               </p>
@@ -78,7 +78,7 @@ export default function Product({ product }) {
               </div>
               <div className={styles.product__sizeDropdown}>
                 <p className="descp">UK SIZE</p>
-                <label for="size"></label>
+                <label htmlFor="size"></label>
                 <select id="size">
                   <option value="5">5</option>
                   <option value="6">6</option>

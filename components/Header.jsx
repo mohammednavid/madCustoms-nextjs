@@ -41,7 +41,7 @@ const Header = ({ isErrorPage }) => {
     window.onscroll = function () {
       headerClass();
     };
-  }, []);
+  }, [onTop]);
   const closeShop=()=>{
       setShopOpen(false)
   }
@@ -54,7 +54,7 @@ const Header = ({ isErrorPage }) => {
       )}
     >
       <div className={styles.container}>
-        <Link href="/">
+        <Link href="/" as="/" passHref>
           <h1 className={styles.site_logo}>MADE CUSTOMS</h1>
         </Link>
         <nav
