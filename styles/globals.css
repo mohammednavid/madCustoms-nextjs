@@ -86,4 +86,11 @@ a {
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
+.border {
+  min-width: 100%;
+  height: 0.1px;
+  background: #777;
+  opacity: 0.2;
+}
 /*# sourceMappingURL=globals.css.map */

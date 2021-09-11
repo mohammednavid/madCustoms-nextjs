@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 import useOnClickOutside from "use-onclickoutside";
-// import Logo from "../../assets/icons/logo";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "../styles/Header.module.css";
@@ -9,7 +9,7 @@ import classNames from "classnames";
 import { Menu, SearchOutlined } from "@material-ui/icons";
 import MenuComponent from "./Menu";
 import Search from "./Search";
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 
 const Header = ({ isErrorPage }) => {
   const router = useRouter();
@@ -42,10 +42,10 @@ const Header = ({ isErrorPage }) => {
       headerClass();
     };
   }, [onTop]);
-  const closeShop=()=>{
-      setShopOpen(false)
-  }
-  useOnClickOutside(shopRef,closeShop)
+  const closeShop = () => {
+    setShopOpen(false);
+  };
+  useOnClickOutside(shopRef, closeShop);
   return (
     <header
       className={classNames(
@@ -55,7 +55,10 @@ const Header = ({ isErrorPage }) => {
     >
       <div className={styles.container}>
         <Link href="/" as="/" passHref>
-          <h1 className={styles.site_logo}>MADE CUSTOMS</h1>
+          <a className={styles.site_logoContainer}>
+            <Image src="/logo.png" width={35} height={35} objectFit="cover"/>
+            <h1 className={styles.site_logo}>MADE CUSTOMS</h1>
+          </a>
         </Link>
         <nav
           className={classNames(
@@ -63,16 +66,25 @@ const Header = ({ isErrorPage }) => {
             menuOpen && styles.site_nav__open
           )}
         >
-          <div ref={shopRef} className={classNames(styles.site_nav__shop,shopOpen&&styles.site_nav__shopOpen)} onClick={()=>setShopOpen(!shopOpen)}>
-            SHOP <ArrowDropDownIcon/>
-            {shopOpen && <div>
-              <a>sneakers</a>
-              <a>apparel</a>
-              <a>accessories</a>
-              <a>jewelry</a>
-              <a>house</a>
-              <a>masks</a>
-            </div>}
+          <div
+            ref={shopRef}
+            className={classNames(
+              styles.site_nav__shop,
+              shopOpen && styles.site_nav__shopOpen
+            )}
+            onClick={() => setShopOpen(!shopOpen)}
+          >
+            SHOP <ArrowDropDownIcon />
+            {shopOpen && (
+              <div>
+                <a>sneakers</a>
+                <a>apparel</a>
+                <a>accessories</a>
+                <a>jewelry</a>
+                <a>house</a>
+                <a>masks</a>
+              </div>
+            )}
           </div>
           <Link href="/" Link className={styles.site_nav__btn}>
             MISSIONS

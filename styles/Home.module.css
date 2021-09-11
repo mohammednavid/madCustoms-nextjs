@@ -44,15 +44,8 @@
   }
 }
 
-.home .home__heroBorder {
-  min-width: 100%;
-  height: 0.1px;
-  background: #777;
-  opacity: 0.1;
-}
-
 .home .home__products {
-  padding: 30px 10% 10px 10%;
+  padding: 30px 10% 20px 10%;
 }
 
 @media screen and (max-width: 620px) {
