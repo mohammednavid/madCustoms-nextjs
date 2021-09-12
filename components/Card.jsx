@@ -8,7 +8,7 @@ const Card = ({ id, src, name, by, ratings, price, location }) => {
   return (
     <>
       <Link href={`/custom/[id]`} as={`/custom/${id}`} passHref>
-        <div className={styles.card}>
+        <a className={styles.card}>
           <Image
             src={src}
             alt={src}
@@ -19,21 +19,21 @@ const Card = ({ id, src, name, by, ratings, price, location }) => {
           />
           <div className={styles.content}>
             <p className={styles.name}>{name}</p>
-            <p className="descp">BY: {by}</p>
-            <div>
+            {by && <p className="descp">BY: {by}</p>}
+            {ratings && <div>
               <p className={`descp ${styles.ratings}`}>
                 {ratings} <StarIcon />
               </p>
               <FavoriteBorderIcon />
-            </div>
-            <div>
-              <p className={`descp ${styles.ratings}`}>
+            </div>}
+            {location && <div>
+              <p className={`descp ${styles.ratings,styles.location}`}>
                 <LocationOnIcon /> {location}
               </p>
-            </div>
-            <button className="btn">BUY ${price}</button>
+            </div>}
+            {price && <button className="btn">BUY ${price}</button>}
           </div>
-        </div>
+        </a>
       </Link>
     </>
   );

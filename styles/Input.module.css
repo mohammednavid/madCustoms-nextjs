@@ -1,0 +1,42 @@
+.input {
+  width: 100%;
+  padding-top: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.input .label {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: absolute;
+  font-size: 14px;
+  top: 17px;
+}
+
+@media screen and (max-width: 620px) {
+  .input .label {
+    font-size: 12px;
+  }
+}
+
+.input .label__focus {
+  -webkit-transform: translateY(-22px);
+          transform: translateY(-22px);
+  font-size: 10px;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 5px;
+  padding-left: 0;
+}
+
+.input input:focus label {
+  color: #fff;
+}
+/*# sourceMappingURL=Input.module.css.map */

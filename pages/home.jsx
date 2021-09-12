@@ -16,14 +16,14 @@ const HomePage = () => {
           </p>
           <a className="btn">SHOP CUSTOMS</a>
         </div>
-        <div className={styles.home__heroBorder}></div>
+        <div className="border"></div>
         <div className={styles.home__products}>
           <h2 className={`title ${styles.secTitle}`}>Popular This Week</h2>
           <div className="products">
             <HomeProducts/>
           </div>
         </div>
-        <div className={styles.home__heroBorder}></div>
+        <div className="border"></div>
         <div
           className={styles.home__products}
           style={{ paddingBottom: "30px" }}

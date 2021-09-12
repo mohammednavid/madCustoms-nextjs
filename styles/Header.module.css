@@ -31,15 +31,28 @@
   }
 }
 
-.site_header .container .site_logo {
+.site_header .container .site_logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.site_header .container .site_logoContainer .site_logo {
   font-size: 15px;
   letter-spacing: 1.7px;
   line-height: 20px;
   font-weight: 300;
   font-family: sans-serif;
   text-decoration: none;
-  width: 100%;
   white-space: nowrap;
+  padding-left: 10px;
 }
 
 .site_header .container .site_nav {
