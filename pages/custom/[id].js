@@ -119,21 +119,21 @@ export default function Product({ product }) {
                             setGender("MEN's") || setGenderOpen(false)
                           }
                         >
-                          MEN's
+                          MEN&apos;s
                         </p>
                         <p
                           onClick={() =>
                             setGender("WOMEN's") || setGenderOpen(false)
                           }
                         >
-                          WOMEN's
+                          WOMEN&apos;s
                         </p>
                         <p
                           onClick={() =>
                             setGender("KID's") || setGenderOpen(false)
                           }
                         >
-                          KID's
+                          KID&apos;s
                         </p>
                       </div>
                     )}
@@ -344,6 +344,7 @@ export default function Product({ product }) {
                           width={45}
                           height={45}
                           objectFit="cover"
+                          alt=""
                         />
                       </div>
                     </div>
@@ -381,6 +382,7 @@ export default function Product({ product }) {
                           width={45}
                           height={45}
                           objectFit="cover"
+                          alt=""
                         />
                       </div>
                     </div>
@@ -393,7 +395,7 @@ export default function Product({ product }) {
                     </div>
                     <p className={`descp ${styles.reviews__text}`}>
                       Super professional, one of the fastest to ship. Everyone
-                      loves Wuuski's customs.
+                      loves Wuuski&apos;s customs.
                     </p>
                     <div className="border"></div>
                   </div>
@@ -422,6 +424,7 @@ export default function Product({ product }) {
                           width={45}
                           height={45}
                           objectFit="cover"
+                          alt=""
                         />
                       </div>
                     </div>
@@ -459,6 +462,7 @@ export default function Product({ product }) {
                           width={45}
                           height={45}
                           objectFit="cover"
+                          alt=""
                         />
                       </div>
                     </div>
@@ -471,7 +475,7 @@ export default function Product({ product }) {
                     </div>
                     <p className={`descp ${styles.reviews__text}`}>
                       Super professional, one of the fastest to ship. Everyone
-                      loves Wuuski's customs.
+                      loves Wuuski&apos;s customs.
                     </p>
                     <div className="border"></div>
                   </div>
