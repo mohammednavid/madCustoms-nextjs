@@ -1,0 +1,58 @@
+.address{
+    .address__country{
+        position: relative;
+        height: 43px;
+        width: 100%;
+        margin-bottom: 29px;
+        margin-top: 13px;
+        .country{
+            border: none;
+            border-bottom: 1px solid #000;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            height: 35px;
+            bottom: -25px;
+            width: 100%;
+            z-index: 99;
+            background: #fff;
+            font-size: 15px;
+            font-family:Helvetica !important;
+            outline: none;
+            @media screen and (max-width:620px) {
+                font-size: 12px;
+            }
+        }
+    }
+    .step_input1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        .address__street{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .address__apt{
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+    }
+    .step_input2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        .address__city{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .address__region{
+            margin-top: 4px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .address__postal{
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+    }
+}
